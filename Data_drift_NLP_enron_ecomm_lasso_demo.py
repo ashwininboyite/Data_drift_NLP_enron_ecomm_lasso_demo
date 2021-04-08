@@ -6,7 +6,8 @@ import string
 def begin():
     global train, numerical_features
     train = pd.read_csv('training_data.csv')
-    numerical_features = train.select_dtypes(['int64', 'float64']).columns
+    numerical_features = train.select_dtypes(['object']).columns
+
     pass
 
 #modelop.score
